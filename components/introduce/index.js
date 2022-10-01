@@ -2,7 +2,7 @@ import { Box, Heading, Flex, Avatar, Text } from "@chakra-ui/react";
 
 const Introduce = () => {
   return (
-    <Box h="740px" w="full" paddingX={40} paddingY={20}>
+    <Box id="about" h="740px" w="full" paddingX={40} paddingY={20}>
       <Flex
         w="full"
         h="full"

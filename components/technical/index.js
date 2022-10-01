@@ -2,7 +2,7 @@ import { Box, Heading, Flex, Image } from "@chakra-ui/react";
 
 const Technical = () => {
   return (
-    <Box w="full" paddingX={40} paddingY={40} alignItems="center">
+    <Box id="tech" w="full" paddingX={40} paddingY={40} alignItems="center">
       <Heading
         textAlign="center"
         as="h1"

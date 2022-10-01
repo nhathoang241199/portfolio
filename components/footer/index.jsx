@@ -1,18 +1,19 @@
-import { Box, Text, Flex, Icon } from "@chakra-ui/react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { AiFillTwitterCircle } from "react-icons/ai";
+import {Box, Text, Flex, Icon} from '@chakra-ui/react';
+import {CgMail} from 'react-icons/cg'
 
-const Header = () => {
-  return (
-    <Box
-      id="header"
-      h="100px"
-      w="full"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Text
+
+const Footer = () => { 
+    return <Box
+    h="100px"
+    w="full"
+    display="flex"
+    justifyContent="space-between"
+    alignItems="center"
+    paddingX={40} paddingY={20}
+    borderTop='1px solid #42446E'
+  >
+    <Flex id='footer' >
+    <Text
         fontFamily="DM Sans"
         _hover={{
           cursor: "pointer",
@@ -80,43 +81,15 @@ const Header = () => {
       >
         <a href="#footer">Contact</a>
       </Text>
-      <Flex>
-        <Icon
-          _hover={{
-            cursor: "pointer",
-            opacity: 0.8,
-          }}
-          as={BsGithub}
-          color="#A7A7A7"
-          w={6}
-          h={6}
-          mr={6}
-        />
-        <Icon
-          _hover={{
-            cursor: "pointer",
-            opacity: 0.8,
-          }}
-          as={AiFillTwitterCircle}
-          color="#A7A7A7"
-          w={6}
-          h={6}
-          mr={6}
-        />
-        <Icon
-          _hover={{
-            cursor: "pointer",
-            opacity: 0.8,
-          }}
-          as={BsLinkedin}
-          color="#A7A7A7"
-          w={6}
-          h={6}
-          mr={6}
-        />
-      </Flex>
-    </Box>
-  );
-};
+    </Flex>
+    <Flex _hover={{
+                  cursor: "pointer",
+                  opacity: 0.8,
+                }} alignItems='center'>
+        <Icon color="#CCCCCC" mr={1} as={CgMail}/> 
+        <Text href="mailto:nhathoang241199@gmail.com" color="#CCCCCC">nhathoang241199@gmail.com</Text>
+    </Flex>
+  </Box>
+}
 
-export default Header;
+export default Footer;
